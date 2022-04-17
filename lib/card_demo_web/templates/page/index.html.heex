@@ -1,0 +1,11 @@
+<container>
+  <cards>
+  <%= for %{title: title, sub_title: sub_title, image: image} <- @entries do %>
+    <card>
+     <img src={image}/>
+     <card-title><%=title%></card-title>
+     <card-sub-title><%=sub_title%></card-sub-title>
+    </card>
+   <%end %>
+  </cards>
+</container>

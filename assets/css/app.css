@@ -1,0 +1,23 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+cards {
+  @apply flex flex-row flex-wrap justify-center gap-3 pt-5
+}
+cards img {
+  @apply object-scale-down h-64 w-64
+}
+card{
+  @apply max-w-sm flex flex-col h-80
+}
+card-title {
+  @apply text-base
+}
+card-sub-title{
+  @apply text-sm text-gray-400
+}
+container {
+  @apply my-auto pt-8
+}
